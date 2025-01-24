@@ -42,16 +42,16 @@ def run_coverage_test(build_type):
     if not utils.program_available('gcov'):
         utils.colored_print("Skipping coverage test - 'gcov' not available")
 
-    gcdaFiles = list(Path(f'{utils.BUILD_TOP_DIR/build_type/"src"}').rglob(f'*.gcda'))
+    gcda_files = list(Path(f'{utils.BUILD_TOP_DIR/build_type/"src"}').rglob(f'*.gcda'))
     utils.colored_print('gcdaFiles:')
-    for gcdaFile in gcdaFiles:
-        utils.colored_print(f'{gcdaFile}')
-    if not gcdaFiles:
+    for gcda_file in gcda_files:
+        utils.colored_print(f'{gcda_file}')
+    if not gcda_files:
         raise FileNotFoundError("No '.gcda' files found")
 
-    for gcdaFile in gcdaFiles:
-        outputFileDir = Path(gcdaFile).parent
-        command = f'gcov -n {gcdaFile}'
+    for gcda_file in gcda_files:
+        outputFileDir = Path(gcda_file).parent
+        command = f'gcov -n {gcda_file}'
         result = utils.run_command(command, shell=True, cwd=outputFileDir, capture_output=True, text=True)
         if result.returncode != 0:
             utils.colored_print(result.stderr)
