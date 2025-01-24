@@ -51,6 +51,7 @@ function(${PROJECT_NAME}_set_target_c_compiler_flags target)
             /WX
             /wd4710
             /wd4711
+            /wd4820
             /wd5045
             /wd5072
         )
@@ -83,6 +84,7 @@ function(${PROJECT_NAME}_set_target_cpp_compiler_flags target)
             /wd4626
             /wd4710
             /wd4711
+            /wd4820
             /wd5026
             /wd5027
             /wd5072

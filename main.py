@@ -50,7 +50,7 @@ def run_check():
         for file in files:
             total_result = total_result & check_file(repo_path, file)
         colored_print(f'Done repository: {repo}\n')
-
+    return total_result
 
 if __name__ == '__main__':
     colored_print(f'--- {APP_NAME} start ---')
