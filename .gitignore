@@ -1,0 +1,8 @@
+# mac-os system files
+.DS_Store
+
+# python cache
+__pycache__
+
+# Notes file
+_notes.md
