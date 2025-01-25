@@ -1,4 +1,5 @@
 [
     "c-errors",
-    "c-logger"
+    "c-logger",
+    "c-malloc-mock"
 ]
