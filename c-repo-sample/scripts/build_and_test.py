@@ -118,8 +118,7 @@ def main():
 
         if 'nonsanitized' in build_type:
             run_memory_test(tests_executables_dict)
-
-        run_clang_tidy_test(build_type)
+            run_clang_tidy_test(build_type)
 
         if 'debug' in build_type:
             run_coverage_test(build_type)
