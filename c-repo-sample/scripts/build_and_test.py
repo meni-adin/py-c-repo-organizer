@@ -66,7 +66,7 @@ def run_coverage_test(build_type):
     for gcda_file in gcda_files:
         utils.colored_print(f'{gcda_file}')
     if not gcda_files:
-        raise FileNotFoundError("No '.{GCOV_RESULT_FILES_EXTENSION}' files found")
+        raise FileNotFoundError(f"No '.{GCOV_RESULT_FILES_EXTENSION}' files found")
 
     for gcda_file in gcda_files:
         outputFileDir = Path(gcda_file).parent

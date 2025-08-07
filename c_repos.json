@@ -1,5 +1,6 @@
 [
-    "c-errors",
+    "c-mdn-status",
+    "c-mdn-standard-streams-redirection",
     "c-logger",
-    "c-standard-streams-redirection"
+    "cpp-gtest-extension"
 ]
