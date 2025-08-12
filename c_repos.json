@@ -1,4 +1,6 @@
 [
     "c-mdn-status",
-    "c-mdn-standard-streams-redirection"
+    "cpp-mdn-gtest-extension",
+    "c-mdn-standard-streams-redirection",
+    "c-mdn-mock-wrapper"
 ]
