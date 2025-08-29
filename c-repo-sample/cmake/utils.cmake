@@ -89,6 +89,7 @@ function(${PROJECT_NAME}_set_target_cpp_compiler_flags target)
         endif()
     elseif(CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
         target_compile_options(${target} PRIVATE
+            /EHsc
             /Wall
             /WX
             /wd4514
